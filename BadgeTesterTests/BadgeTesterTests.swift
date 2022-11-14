@@ -17,4 +17,8 @@ final class BadgeTesterTests: XCTestCase {
         XCTAssertEqual(2*2, 4)
         XCTAssertEqual(3*2+1, 7)
     }
+    
+    func testFailing() {
+        XCTAssertTrue(false)
+    }
 }
