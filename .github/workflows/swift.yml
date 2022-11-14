@@ -8,6 +8,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Run tests
-      run: xcodebuild clean test -project "BadgeTester.xcodeproj" -scheme "BadgeTester" -destination "platform=iOS Simulator,name=iPhone 11 Pro Max,OS=latest"
+      run: xcodebuild clean test -project "BadgeTester.xcodeproj" -scheme "BadgeTester" -destination "platform=iOS Simulator,name=Any iOS Simulator,OS=latest"
     - name: Build App
       run: xcodebuild -project "BadgeTester.xcodeproj" -scheme "BadgeTester" -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
